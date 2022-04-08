@@ -1,0 +1,40 @@
+
+
+//ОБНУЛЕНИЕ
+@import "null";
+body {
+	color: #000;
+	font-size: 14px;
+	&._lock{
+		overflow: hidden;
+	}
+}
+
+//ШРИФТ ПО УМОЛЧАНИЮ
+$fontfamily: "Roboto";
+
+//ПЕРЕМЕННЫЕ
+$minWidth: 320px;
+$maxWidth: 0;
+$maxWidthContainer: 940;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md2: 767.98;
+$md2: 479.98;
+
+
+._container{
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+
+	@media (max-width: $md1 + px){
+		max-width: 970px;
+	}
+	@media (max-width: $md2+px){
+		max-width: 750px;
+	}
+	@media (max-width: $md3+px){
+		max-width: none;
+		padding: 0 10px;
+	}
+}
